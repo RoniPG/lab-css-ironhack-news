@@ -178,13 +178,12 @@ header {
   
 /* Write your CSS below */
 
+/* Style for mobiles */
 @media (max-width: 760px) {
   .navbar,
   .main-article,
   .articles-container{
     /* background-color: red; */
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-content: center;    
 
@@ -201,4 +200,22 @@ header {
     margin-bottom: 10%;
   }
 
+}
+
+/* Style for tablets */
+
+@media (min-width: 760px) and (max-width: 1024px) {
+    .navbar{
+      justify-content: space-evenly; 
+    }
+    .navbar li {
+      flex-grow: 1;
+    }
+    .articles-container{
+      flex-wrap: wrap;
+    }
+    .articles-container .article{
+      width: 45%;
+      margin-bottom: 5%;
+    }
 }
