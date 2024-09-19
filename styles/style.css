@@ -177,7 +177,9 @@ header {
 }
   
 /* Write your CSS below */
-
+.menu-icon{
+  display: none;
+}
 /* Style for mobiles */
 @media (max-width: 760px) {
   .navbar,
@@ -218,4 +220,18 @@ header {
       width: 45%;
       margin-bottom: 5%;
     }
+}
+
+/* Style for small mobile */
+
+@media (max-width: 480px) {
+  .navbar li{
+    display: none;
+  }
+  .menu-icon{
+    display: block;
+  }
+  .newspaper-name{
+    border-bottom: 0px;
+  }
 }
